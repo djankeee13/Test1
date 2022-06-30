@@ -1,0 +1,12 @@
+<div class="container edit">
+    <div  *ngFor="let team of teams">
+        <app-main-child 
+        [bindName]="team.name" 
+        [abb]="team.abbreviation" 
+        [city]="team.city" 
+        [conference]="team.conference"
+        [division]="team.division">
+        </app-main-child>
+      
+    </div>
+</div>

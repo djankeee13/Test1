@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row" *ngFor="let one of data">
+        <div class="col-7" style="background: lightcoral; margin: 1px;">
+            <h4> Division: {{one.team.conference}}</h4>
+            <h1>Home {{one.game.home_team_score}} : {{one.game.visitor_team_score}} Away </h1>
+        </div>
+        <div class="col-4 edit-main" style="background: skyblue; margin: 1px;">
+            <h4>Player of the match: </h4>
+            <h3>{{one.player.first_name}} {{one.player.last_name}}</h3>
+            <h5>Position: {{one.player.position}}</h5>
+            <h5>Height: {{one.player.height_feet}} ` {{one.player.height_inches}} ``</h5>
+            <div class="edit">
+                <h1>{{one.pts}}</h1>
+            </div>
+        </div>
+    </div>
+</div>
