@@ -1,0 +1,20 @@
+<!--     LEELA WEB DEV TUTOTRIAL + HOME + CATEGORIES  -->
+
+<h1> user with id {{user.id}} and with name: {{user.name}}</h1>
+
+<div>
+    <a routerLink="/categories"> Go To Categories</a>
+    <button (click)="onCategoriesClick()" style="display: block; margin-top:10px;"> Navigate to Categories</button>
+</div>
+<div>
+    <a [routerLink]="['/users', 1, 'djanaa']" 
+    [queryParams]="{page: 1, search: 'djanaa'}"
+    [fragment]="'load'"
+    > Details.. </a>  <!-- 2 nacina za uradisiti istu stvar -->
+    <button (click)="getRamaDetails()" style="display: block;"> Get rama Details</button> <!-- 2 nacina za uradisiti istu stvar -->
+</div>
+<div>
+    <a [routerLink]="['/users', 1, 'Lelaa']"  [queryParams]="{page: 1, search : 'Lelaa'}" fragment="loading11"> Geta details somaa</a>
+    
+    <!-- POGLEDATI CONSOLE LOG IN NG ONINIT STA RADI -->
+</div>

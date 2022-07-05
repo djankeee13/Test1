@@ -10,6 +10,11 @@ import { MainChildComponent } from './main-child/main-child.component';
 import { ShowcompComponent } from './showcomp/showcomp.component';
 import { HidecompComponent } from './hidecomp/hidecomp.component';
 import { BasketballStatsComponent } from './basketball-stats/basketball-stats.component';
+import { LocalstorageComponent } from './localstorage/localstorage.component';
+import { UsersComponent } from './users/users.component';
+import { CategoriesComponent } from './categories/categories.component';
+import { HomeComponent } from './home/home.component';
+import { CategorieComponent } from './categorie/categorie.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +22,12 @@ import { BasketballStatsComponent } from './basketball-stats/basketball-stats.co
     MainChildComponent,
     ShowcompComponent,
     HidecompComponent,
-    BasketballStatsComponent
+    BasketballStatsComponent,
+    LocalstorageComponent,
+    UsersComponent,
+    CategoriesComponent,
+    HomeComponent,
+    CategorieComponent
   ],
   imports: [
     BrowserModule,
